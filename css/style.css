@@ -1,0 +1,87 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    /* background-color: aqua; */
+
+}
+
+.banner {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.area {
+    position: absolute;
+}
+
+.navbar {
+    background-color: transparent;
+}
+
+.top-nav-collapse {
+    background-color: #000000;
+}
+
+/* .nb-button {
+    background-image: url("../images/menu.png ");
+} */
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        background-color: transparent;
+    }
+
+    .top-nav-collapse {
+        background-color: #000000;
+    }
+
+    .text-change {
+        color: #000000;
+    }
+
+    .organisers {
+        background-image: none !important;
+        height: 2300px !important;
+    }
+
+    .team {
+        background-color: #000000 !important;
+    }
+
+    .card-height {
+        height: 150px !important;
+        width: 150px !important;
+        border-radius: 50% !important;
+    }
+}
+
+.organisers {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: url("../images/obf.png");
+    background-size: cover;
+    background-position: center;
+
+}
+
+.card-height {
+    height: 200px !important;
+    width: 200px !important;
+    border-radius: 50% !important;
+}
+
+/* .team {
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    display: block;
+    text-align: center;
+} */
