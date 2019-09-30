@@ -3,18 +3,71 @@ html {
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
-    /* background-color: aqua; */
+}
 
+.navbar {
+    box-shadow: none !important;
 }
 
 .banner {
     position: relative;
     height: 100vh;
-    width: 100%;
+    /* width: 100%; */
     background-image: url("../images/background.jpg");
     background-size: cover;
     background-position: center;
 }
+
+.hero__scroll {
+    position: absolute;
+    bottom: 60px;
+    width: 200px;
+    margin: auto;
+    display: block;
+    cursor: pointer;
+    padding-bottom: 40px;
+    left: 0;
+    right: 0;
+    text-transform: uppercase;
+}
+
+.hero__scroll .chevron {
+    margin-top: 20px;
+    display: block;
+
+    color: #FF4081;
+}
+
+i.chevron {
+    -webkit-animation: mover 1s infinite alternate;
+    animation: mover 1s infinite alternate;
+}
+
+i.chevron {
+    -webkit-animation: mover 1s infinite alternate;
+    animation: mover 1s infinite alternate;
+}
+
+@-webkit-keyframes mover {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes mover {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
 
 .area {
     position: absolute;
@@ -28,21 +81,37 @@ html {
     background-color: #000000;
 }
 
-/* .nb-button {
-    background-image: url("../images/menu.png ");
-} */
+.typedJsText {
+    font-size: 40px;
+}
 
-@media only screen and (max-width: 768px) {
+.banner-dsc-text {
+    font-size: 20px;
+}
+
+.show-content {
+    display: none;
+}
+
+@media (max-width: 575.98px) {
     .navbar {
-        background-color: transparent;
+        background-color: transparent !important;
     }
 
     .top-nav-collapse {
-        background-color: #000000;
+        background-color: #000000 !important;
     }
 
     .text-change {
-        color: #000000;
+        color: #000000 !important;
+    }
+
+    .typedJsText {
+        font-size: 20px;
+    }
+
+    .banner-dsc-text {
+        font-size: 15px;
     }
 
     .organisers {
@@ -54,12 +123,159 @@ html {
         background-color: #000000 !important;
     }
 
+    .show-display {
+        display: none;
+    }
+
+    .show-content {
+        display: initial;
+    }
+
     .card-height {
         height: 150px !important;
         width: 150px !important;
         border-radius: 50% !important;
     }
 }
+
+/*
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .navbar {
+        background-color: transparent !important;
+    }
+
+    .top-nav-collapse {
+        background-color: #000000 !important;
+    }
+
+    .text-change {
+        color: #000000 !important;
+    }
+
+    .typedJsText {
+        font-size: 20px;
+    }
+
+    .banner-dsc-text {
+        font-size: 15px;
+    }
+
+    .organisers {
+        background-image: none !important;
+        height: 2300px !important;
+    }
+
+    .team {
+        background-color: #000000 !important;
+    }
+
+    .show-display {
+        display: none;
+    }
+
+    .show-content {
+        display: initial;
+    }
+
+    .card-height {
+        height: 150px !important;
+        width: 150px !important;
+        border-radius: 50% !important;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .navbar {
+        background-color: transparent !important;
+    }
+
+    .top-nav-collapse {
+        background-color: #000000 !important;
+    }
+
+    .text-change {
+        color: #000000 !important;
+    }
+
+    .typedJsText {
+        font-size: 20px;
+    }
+
+    .banner-dsc-text {
+        font-size: 15px;
+    }
+
+    .organisers {
+        background-image: none !important;
+        height: 2300px !important;
+    }
+
+    .team {
+        background-color: #000000 !important;
+    }
+
+    .show-display {
+        display: none;
+    }
+
+    .show-content {
+        display: initial;
+    }
+
+    .card-height {
+        height: 150px !important;
+        width: 150px !important;
+        border-radius: 50% !important;
+    }
+
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .navbar {
+        background-color: transparent !important;
+    }
+
+    .top-nav-collapse {
+        background-color: #000000 !important;
+    }
+
+    .text-change {
+        color: #000000 !important;
+    }
+
+    .typedJsText {
+        font-size: 20px;
+    }
+
+    .banner-dsc-text {
+        font-size: 15px;
+    }
+
+    .organisers {
+        background-image: none !important;
+        height: 2100px !important;
+    }
+
+    .team {
+        background-color: #000000 !important;
+    }
+
+    .show-display {
+        display: none;
+    }
+
+    .show-content {
+        display: initial;
+    }
+
+    .card-height {
+        height: 150px !important;
+        width: 150px !important;
+        border-radius: 50% !important;
+    }
+
+} */
 
 .organisers {
     position: relative;
@@ -76,12 +292,3 @@ html {
     width: 200px !important;
     border-radius: 50% !important;
 }
-
-/* .team {
-    border-radius: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 0;
-    display: block;
-    text-align: center;
-} */
