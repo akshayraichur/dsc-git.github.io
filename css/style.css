@@ -138,7 +138,7 @@ i.chevron {
     }
 }
 
-/*
+
 @media (min-width: 576px) and (max-width: 767.98px) {
     .navbar {
         background-color: transparent !important;
@@ -162,7 +162,7 @@ i.chevron {
 
     .organisers {
         background-image: none !important;
-        height: 2300px !important;
+        height: 2400px !important;
     }
 
     .team {
@@ -208,7 +208,7 @@ i.chevron {
 
     .organisers {
         background-image: none !important;
-        height: 2300px !important;
+        height: 2500px !important;
     }
 
     .team {
@@ -254,7 +254,7 @@ i.chevron {
 
     .organisers {
         background-image: none !important;
-        height: 2100px !important;
+        height: 2500px !important;
     }
 
     .team {
@@ -275,7 +275,7 @@ i.chevron {
         border-radius: 50% !important;
     }
 
-} */
+} 
 
 .organisers {
     position: relative;
